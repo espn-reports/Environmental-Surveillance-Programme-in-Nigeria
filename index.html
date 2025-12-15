@@ -172,6 +172,9 @@
       <button onclick="switchReport(2)" title="Field Operations">
         <i class="fas fa-map-marked-alt"></i><span class="btn-text">Field Operations</span>
       </button>
+      <button onclick="switchReport(3)" title="Laboratory Report">
+        <i class="fas fa-map-marked-alt"></i><span class="btn-text">Laboratory Report</span>
+      </button>
     </div>
 
     <button class="collapse-btn" onclick="toggleSidebar()" title="Toggle Menu">☰</button>
@@ -187,6 +190,7 @@
     const reportLinks = [
       "https://app.powerbi.com/view?r=eyJrIjoiOGI4ZjcxNzItZDQzYS00NTA3LTk4YzYtOTgzZTQxY2JlNjllIiwidCI6ImY2YzY5ZDY0LWMzZmEtNDI1MS1hMzkzLTkwNjdkMjcxNzY0NyJ9",
       "https://app.powerbi.com/view?r=eyJrIjoiYzE0MDY2YzQtNjQ4MC00MjI2LWIzMjUtNGQ1NTVmYzJiMmZjIiwidCI6ImY2YzY5ZDY0LWMzZmEtNDI1MS1hMzkzLTkwNjdkMjcxNzY0NyJ9",
+      "https://app.powerbi.com/view?r=eyJrIjoiOTU4OWZiZDctYTk4Ni00ZjczLWJmZGEtODRhOGMyYjhkNmQ5IiwidCI6ImY2YzY5ZDY0LWMzZmEtNDI1MS1hMzkzLTkwNjdkMjcxNzY0NyJ9",
       "https://app.powerbi.com/view?r=eyJrIjoiOTU4OWZiZDctYTk4Ni00ZjczLWJmZGEtODRhOGMyYjhkNmQ5IiwidCI6ImY2YzY5ZDY0LWMzZmEtNDI1MS1hMzkzLTkwNjdkMjcxNzY0NyJ9"
     ];
 
@@ -195,7 +199,7 @@
     const sidebar = document.getElementById("sidebar");
 
     // Load default report
-    reportFrame.src = reportLinks[2];
+    reportFrame.src = reportLinks[3];
 
     function switchReport(index) {
       reportFrame.src = reportLinks[index];
@@ -210,6 +214,7 @@
 
 </body>
 </html>
+
 
 
 
